@@ -1,643 +1,2035 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid c79db4db-9bb0-4353-9447-39be10aa19d6)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "LED" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "LED diode" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Light emitting diode" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "LED_0_1"
-        (polyline
-          (pts
-            (xy -1.27 -1.27)
-            (xy -1.27 1.27)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 0)
-            (xy 1.27 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -1.27)
-            (xy 1.27 1.27)
-            (xy -1.27 0)
-            (xy 1.27 -1.27)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.048 -0.762)
-            (xy -4.572 -2.286)
-            (xy -3.81 -2.286)
-            (xy -4.572 -2.286)
-            (xy -4.572 -1.524)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.778 -0.762)
-            (xy -3.302 -2.286)
-            (xy -2.54 -2.286)
-            (xy -3.302 -2.286)
-            (xy -3.302 -1.524)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "LED_1_1"
-        (pin passive line (at -3.81 0 0) (length 2.54)
-          (name "K" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 3.81 0 180) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.032 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "R" (at 0 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R res resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_0_1"
-        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Interface_Optical:SFP+" (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at -8.89 16.51 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SFP+" (at 11.43 16.51 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 -21.59 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://members.snia.org/document/dl/25892" (at -11.43 16.51 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "SFP transceiver gigabit ethernet SFF-8432" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Connector for Small Form Factor Pluggable (SFP+) module, 10 Gbit/s, serial-to-serial data-agnostic optical transceiver" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "*SFP*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SFP+_0_0"
-        (rectangle (start -10.16 15.24) (end 10.16 -15.24)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "SFP+_1_1"
-        (pin power_in line (at -2.54 -17.78 90) (length 2.54)
-          (name "VeeT" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -17.78 90) (length 2.54)
-          (name "VeeR" (effects (font (size 1.27 1.27))))
-          (number "10" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -17.78 90) (length 2.54) hide
-          (name "VeeR" (effects (font (size 1.27 1.27))))
-          (number "11" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 12.7 2.54 180) (length 2.54)
-          (name "RD-" (effects (font (size 1.27 1.27))))
-          (number "12" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 12.7 5.08 180) (length 2.54)
-          (name "RD+" (effects (font (size 1.27 1.27))))
-          (number "13" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -17.78 90) (length 2.54) hide
-          (name "VeeR" (effects (font (size 1.27 1.27))))
-          (number "14" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 17.78 270) (length 2.54)
-          (name "VccR" (effects (font (size 1.27 1.27))))
-          (number "15" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -2.54 17.78 270) (length 2.54)
-          (name "VccT" (effects (font (size 1.27 1.27))))
-          (number "16" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -2.54 -17.78 90) (length 2.54) hide
-          (name "VeeT" (effects (font (size 1.27 1.27))))
-          (number "17" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 12.7 -2.54 180) (length 2.54)
-          (name "TD+" (effects (font (size 1.27 1.27))))
-          (number "18" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 12.7 -5.08 180) (length 2.54)
-          (name "TD-" (effects (font (size 1.27 1.27))))
-          (number "19" (effects (font (size 1.27 1.27))))
-        )
-        (pin open_collector line (at 12.7 -10.16 180) (length 2.54)
-          (name "TX_FAULT" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -2.54 -17.78 90) (length 2.54) hide
-          (name "VeeT" (effects (font (size 1.27 1.27))))
-          (number "20" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -12.7 -7.62 0) (length 2.54)
-          (name "TX_DISABLE" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -12.7 7.62 0) (length 2.54)
-          (name "SDA" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -12.7 5.08 0) (length 2.54)
-          (name "SCL" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -12.7 2.54 0) (length 2.54)
-          (name "MOD_ABS" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -12.7 -2.54 0) (length 2.54)
-          (name "RS0" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin open_collector line (at 12.7 10.16 180) (length 2.54)
-          (name "RX_LOS" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -12.7 -5.08 0) (length 2.54)
-          (name "RS1" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -17.78 90) (length 2.54)
-          (name "CAGE" (effects (font (size 1.27 1.27))))
-          (number "CAGE" (effects (font (size 0.508 0.508))))
-        )
-      )
-    )
-    (symbol "SamacSys_Parts:TXS0108EPWRG4" (in_bom yes) (on_board yes)
-      (property "Reference" "IC" (at 24.13 7.62 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Value" "TXS0108EPWRG4" (at 24.13 5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "SOP65P640X120-20N" (at 24.13 -94.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1617786399489&ref_url=https%253A%252F%252Fyellow-search.com%252F" (at 24.13 -194.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Height" "1.2" (at 24.13 -394.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Manufacturer_Name" "Texas Instruments" (at 24.13 -494.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Manufacturer_Part_Number" "TXS0108EPWRG4" (at 24.13 -594.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Mouser Part Number" "595-TXS0108EPWRG4" (at 24.13 -694.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TXS0108EPWRG4?qs=wkx8pu8tL7LKCwSiM1j4%252Bw%3D%3D" (at 24.13 -794.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Arrow Part Number" "TXS0108EPWRG4" (at 24.13 -894.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Arrow Price/Stock" "https://www.arrow.com/en/products/txs0108epwrg4/texas-instruments" (at 24.13 -994.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "ki_description" "Translation - Voltage Levels 8B Bidir Vltg-Level Translator" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "TXS0108EPWRG4_1_1"
-        (rectangle (start 5.08 2.54) (end 22.86 -25.4)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at 0 0 0) (length 5.08)
-          (name "A1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -22.86 0) (length 5.08)
-          (name "OE" (effects (font (size 1.27 1.27))))
-          (number "10" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 27.94 -22.86 180) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "11" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 27.94 -20.32 180) (length 5.08)
-          (name "B8" (effects (font (size 1.27 1.27))))
-          (number "12" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 27.94 -17.78 180) (length 5.08)
-          (name "B7" (effects (font (size 1.27 1.27))))
-          (number "13" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 27.94 -15.24 180) (length 5.08)
-          (name "B6" (effects (font (size 1.27 1.27))))
-          (number "14" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 27.94 -12.7 180) (length 5.08)
-          (name "B5" (effects (font (size 1.27 1.27))))
-          (number "15" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 27.94 -10.16 180) (length 5.08)
-          (name "B4" (effects (font (size 1.27 1.27))))
-          (number "16" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 27.94 -7.62 180) (length 5.08)
-          (name "B3" (effects (font (size 1.27 1.27))))
-          (number "17" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 27.94 -5.08 180) (length 5.08)
-          (name "B2" (effects (font (size 1.27 1.27))))
-          (number "18" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 27.94 -2.54 180) (length 5.08)
-          (name "VCCB" (effects (font (size 1.27 1.27))))
-          (number "19" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 0) (length 5.08)
-          (name "VCCA" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 27.94 0 180) (length 5.08)
-          (name "B1" (effects (font (size 1.27 1.27))))
-          (number "20" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -5.08 0) (length 5.08)
-          (name "A2" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -7.62 0) (length 5.08)
-          (name "A3" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -10.16 0) (length 5.08)
-          (name "A4" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -12.7 0) (length 5.08)
-          (name "A5" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -15.24 0) (length 5.08)
-          (name "A6" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -17.78 0) (length 5.08)
-          (name "A7" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -20.32 0) (length 5.08)
-          (name "A8" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-
-  (symbol (lib_id "Device:LED") (at 37.465 139.065 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 92d40977-522e-4da6-899f-4b02fb95cfe7)
-    (property "Reference" "D1" (at 40.64 139.3825 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "LED" (at 40.64 141.9225 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" (at 37.465 139.065 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 37.465 139.065 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1c35101f-f692-4277-9711-e955993493ab))
-    (pin "2" (uuid 8e9c45c0-675b-4018-9de4-63e7a094171e))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
-          (reference "D1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 37.465 128.905 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 93e013da-c60b-47c0-ac53-c4b79e6ac125)
-    (property "Reference" "R12" (at 39.37 127.635 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "R" (at 39.37 130.175 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" (at 35.687 128.905 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 37.465 128.905 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 066e62da-8bd1-4e7b-9410-ec4e9e16eb6e))
-    (pin "2" (uuid 091ff3c6-cc62-47c8-adf8-ab65ac78fa17))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
-          (reference "R12") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Interface_Optical:SFP+") (at 142.24 62.23 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 9b7615df-c247-4755-834b-e2dd2ba032d1)
-    (property "Reference" "J3" (at 144.4341 41.91 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SFP+" (at 144.4341 44.45 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Connector:Connector_SFP_and_Cage" (at 142.24 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://members.snia.org/document/dl/25892" (at 130.81 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9305fddd-7b3f-46e8-8081-b96cd3484c5c))
-    (pin "10" (uuid 9cbbcb5d-d4d8-4f67-8cd9-12cd595d268f))
-    (pin "11" (uuid f4727ab9-7ad0-4e6e-8dae-491627161b21))
-    (pin "12" (uuid 5f30bafb-df0a-49a6-856b-3126d9163b1b))
-    (pin "13" (uuid cb692f11-3151-446b-8de1-d147c4f9f111))
-    (pin "14" (uuid cc24747b-51e0-400e-a002-438fc195be43))
-    (pin "15" (uuid e3241635-8d75-4449-b046-a60275c85f55))
-    (pin "16" (uuid e43a4ca0-de55-4114-832d-8690dd714009))
-    (pin "17" (uuid 3295c291-acd1-44d5-b88d-89beced38659))
-    (pin "18" (uuid 96eeda63-df80-410c-aa47-cb57cb50128e))
-    (pin "19" (uuid 102e4005-2455-4913-92ce-55961045a78c))
-    (pin "2" (uuid e2442198-3e5b-472e-bbd4-76bfecb72def))
-    (pin "20" (uuid 3f60f117-b944-4c0c-9661-c8dbf1ec9c0e))
-    (pin "3" (uuid 8997feb5-106e-49fa-a6f2-18614738a890))
-    (pin "4" (uuid cf23ea31-9c4e-41f9-94aa-74aedd9e11c5))
-    (pin "5" (uuid a28580f2-dd3b-4fda-8210-4071229f13c5))
-    (pin "6" (uuid f1f0beb0-890c-4504-9500-a6a882bf8e8c))
-    (pin "7" (uuid 530b0786-9868-4ac8-ae61-27108d3e3b58))
-    (pin "8" (uuid 38ed47f3-22d3-4d06-87a6-25ebdc2817ff))
-    (pin "9" (uuid 12da5ba4-343d-49ba-bd83-dc6a7fdf1155))
-    (pin "CAGE" (uuid ff02512e-55fb-4263-887c-5f7664c4e0ee))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
-          (reference "J3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "SamacSys_Parts:TXS0108EPWRG4") (at 212.09 76.835 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a7c8a085-c762-4424-8639-fc087617ab73)
-    (property "Reference" "IC2" (at 226.06 69.85 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "TXS0108EPWRG4" (at 226.06 72.39 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SamacSys_Parts:SOP65P640X120-20N" (at 236.22 171.755 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1617786399489&ref_url=https%253A%252F%252Fyellow-search.com%252F" (at 236.22 271.755 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "1.2" (at 236.22 471.755 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Texas Instruments" (at 236.22 571.755 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "TXS0108EPWRG4" (at 236.22 671.755 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "595-TXS0108EPWRG4" (at 236.22 771.755 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TXS0108EPWRG4?qs=wkx8pu8tL7LKCwSiM1j4%252Bw%3D%3D" (at 236.22 871.755 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Arrow Part Number" "TXS0108EPWRG4" (at 236.22 971.755 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Arrow Price/Stock" "https://www.arrow.com/en/products/txs0108epwrg4/texas-instruments" (at 236.22 1071.755 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 868b6f59-62ea-423b-b13d-403f6d37f03e))
-    (pin "10" (uuid 71c9ebb1-efa2-4acf-9495-2af354ec735e))
-    (pin "11" (uuid 75e6f084-13b2-46ac-bdfc-677fa9314593))
-    (pin "12" (uuid 821397df-e37d-49eb-aa8f-26478537133f))
-    (pin "13" (uuid 050bbdbc-2af0-48a1-a22b-eb27e7c6947a))
-    (pin "14" (uuid c4cee469-8fcd-4345-b730-cf1ad9fa6b5d))
-    (pin "15" (uuid 26bfc4fe-b89a-48fc-950a-49f32afeeba3))
-    (pin "16" (uuid 2579561e-5a5a-40e6-b833-1eac1d833927))
-    (pin "17" (uuid b318c15f-7e8c-42eb-ad41-2e53bbaf7290))
-    (pin "18" (uuid 8743ac4d-9684-4b23-b1e8-9283fea81432))
-    (pin "19" (uuid 83a08dc7-788e-40b6-836b-ed0c0b2165a6))
-    (pin "2" (uuid 319bd96d-5415-4f58-b790-f6f7ecaccdcb))
-    (pin "20" (uuid 04cc771f-81e8-4680-8d81-46a13b7e7123))
-    (pin "3" (uuid 89cc5a36-2404-4351-8c7c-c90184595be5))
-    (pin "4" (uuid e7431bff-35da-4ced-9f79-09d23372a735))
-    (pin "5" (uuid ccde3222-6f01-4e48-86cb-ce8318d3d624))
-    (pin "6" (uuid 20b6aa56-e490-43a2-89a7-f160fefafa1a))
-    (pin "7" (uuid 80fc9ad8-2bd9-4959-8be5-334d6e216420))
-    (pin "8" (uuid 9ac917aa-1f42-401c-9ee2-5614b3677f71))
-    (pin "9" (uuid ec6a92ed-09eb-4406-a5b1-e97b2604ffa8))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
-          (reference "IC2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Interface_Optical:SFP+") (at 142.24 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d1389021-f6bc-48b3-b06a-9a5da438de39)
-    (property "Reference" "J4" (at 144.4341 93.98 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SFP+" (at 144.4341 96.52 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Connector:Connector_SFP_and_Cage" (at 142.24 135.89 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://members.snia.org/document/dl/25892" (at 130.81 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid acf3b6f7-9fc9-4bc0-8fdf-81229189d284))
-    (pin "10" (uuid 63cb7753-c678-4071-8a42-ad68460ade5d))
-    (pin "11" (uuid d2242d65-34d6-494e-ba3a-ff0e9974b318))
-    (pin "12" (uuid cec5d972-bd5c-451a-b4a0-a5d5e4141e0f))
-    (pin "13" (uuid 5c704583-451d-4596-be7a-0a7f1b03d8fa))
-    (pin "14" (uuid 71913570-3953-402f-8796-3bff49087c40))
-    (pin "15" (uuid be6c28bb-8ebe-422e-baaf-65bb1f0c3600))
-    (pin "16" (uuid 06d68aa8-8717-4d1b-83be-3dfe3a691d2f))
-    (pin "17" (uuid 6f1d0735-cfb0-46b5-b081-7ea4f8a8aa9f))
-    (pin "18" (uuid 82555f73-a906-4ce7-8cde-a28661732816))
-    (pin "19" (uuid 832442f3-34a1-4834-b3a3-a68f8f34c0be))
-    (pin "2" (uuid 1f9871d6-4caf-4fe8-bc4f-884a4f79c499))
-    (pin "20" (uuid 110c6000-3032-425f-9db4-0685b271af58))
-    (pin "3" (uuid eb4a076b-b1c1-4cd3-b8ce-fbd4bbeb4ead))
-    (pin "4" (uuid 7e5db93d-c3ae-49e8-a252-2de4219bc7f1))
-    (pin "5" (uuid 61fcfbd3-f6fb-4edf-a02b-a39b3dec5fc8))
-    (pin "6" (uuid 5ef056c4-9337-47ab-baf3-e3f9b5b22f21))
-    (pin "7" (uuid 5abcb7f0-3f32-41cb-907c-3444ce9dd279))
-    (pin "8" (uuid 34abe5ab-69eb-4a78-a2da-e825484b84ed))
-    (pin "9" (uuid 3ecaa6c3-90b8-49ee-8275-078a263320f9))
-    (pin "CAGE" (uuid ce515d1a-6ff0-4500-b148-f6b7ab8648fb))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
-          (reference "J4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "SamacSys_Parts:TXS0108EPWRG4") (at 57.15 69.85 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid da8bad73-a1f6-441b-9552-95a864969785)
-    (property "Reference" "IC1" (at 71.12 62.23 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "TXS0108EPWRG4" (at 71.12 64.77 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SamacSys_Parts:SOP65P640X120-20N" (at 81.28 164.77 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1617786399489&ref_url=https%253A%252F%252Fyellow-search.com%252F" (at 81.28 264.77 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "1.2" (at 81.28 464.77 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Texas Instruments" (at 81.28 564.77 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "TXS0108EPWRG4" (at 81.28 664.77 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "595-TXS0108EPWRG4" (at 81.28 764.77 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TXS0108EPWRG4?qs=wkx8pu8tL7LKCwSiM1j4%252Bw%3D%3D" (at 81.28 864.77 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Arrow Part Number" "TXS0108EPWRG4" (at 81.28 964.77 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Arrow Price/Stock" "https://www.arrow.com/en/products/txs0108epwrg4/texas-instruments" (at 81.28 1064.77 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid db188361-e14f-4ba6-bdce-b9b77922fe79))
-    (pin "10" (uuid 7612395f-50cc-40ba-bde6-1b41588c4219))
-    (pin "11" (uuid 51db0f9b-a0b2-4a15-99e2-71bf32675f27))
-    (pin "12" (uuid c2c2b1ae-f130-4d4f-b903-75694efe1469))
-    (pin "13" (uuid b1d5256c-d5cc-4000-8ec4-f94ea55172b4))
-    (pin "14" (uuid dc12c77e-caad-4b61-a4e3-58f1e2a94bae))
-    (pin "15" (uuid a6a0a5a1-bad6-45bc-a1b7-ba230e6bb067))
-    (pin "16" (uuid 2ff9cb4b-0578-43c5-8758-780aaef866be))
-    (pin "17" (uuid f0c5432a-b828-4a4c-a858-992e5ae0fe05))
-    (pin "18" (uuid 26be6ca8-9bc5-4689-bb0c-28c9bd56d136))
-    (pin "19" (uuid 55144596-ebe2-4421-ac0e-9aea4cea8e64))
-    (pin "2" (uuid f9ee1f88-4de3-4d84-8f43-ec5ec01c2092))
-    (pin "20" (uuid 8f88c53f-943f-4127-8c92-64b74805f9d7))
-    (pin "3" (uuid f311f18f-a687-4dea-9e20-3583d74493c6))
-    (pin "4" (uuid 2012e353-8ddc-4f21-a209-dba44e5b4886))
-    (pin "5" (uuid 394521e5-fde2-4d19-a3db-63d1d394be91))
-    (pin "6" (uuid 3b9aa68d-685d-45c3-bea7-c5be6d0c7518))
-    (pin "7" (uuid 01d1a472-3cdd-42ee-af5e-3bc5a76cd58a))
-    (pin "8" (uuid 9297ed3c-df1a-4498-804c-a6084d597573))
-    (pin "9" (uuid ddcda85e-a14a-4447-a728-8d90986374a2))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
-          (reference "IC1") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "c79db4db-9bb0-4353-9447-39be10aa19d6")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Interface_Optical:SFP+"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -8.89 16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SFP+"
+				(at 11.43 16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -21.59 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://members.snia.org/document/dl/25892"
+				(at -11.43 16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Connector for Small Form Factor Pluggable (SFP+) module, 10 Gbit/s, serial-to-serial data-agnostic optical transceiver"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "SFP transceiver gigabit ethernet SFF-8432"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SFP*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SFP+_0_0"
+				(rectangle
+					(start -10.16 15.24)
+					(end 10.16 -15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SFP+_1_1"
+				(pin power_in line
+					(at -2.54 -17.78 90)
+					(length 2.54)
+					(name "VeeT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(name "VeeR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 90)
+					(length 2.54) hide
+					(name "VeeR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "RD-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "RD+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 90)
+					(length 2.54) hide
+					(name "VeeR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 17.78 270)
+					(length 2.54)
+					(name "VccR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 17.78 270)
+					(length 2.54)
+					(name "VccT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -17.78 90)
+					(length 2.54) hide
+					(name "VeeT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "TD+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "TD-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 12.7 -10.16 180)
+					(length 2.54)
+					(name "TX_FAULT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -17.78 90)
+					(length 2.54) hide
+					(name "VeeT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -7.62 0)
+					(length 2.54)
+					(name "TX_DISABLE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 7.62 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "MOD_ABS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "RS0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 12.7 10.16 180)
+					(length 2.54)
+					(name "RX_LOS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "RS1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -17.78 90)
+					(length 2.54)
+					(name "CAGE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CAGE"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SamacSys_Parts:TXS0108EPWRG4"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC"
+				(at 24.13 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "TXS0108EPWRG4"
+				(at 24.13 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "SOP65P640X120-20N"
+				(at 24.13 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1617786399489&ref_url=https%253A%252F%252Fyellow-search.com%252F"
+				(at 24.13 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Translation - Voltage Levels 8B Bidir Vltg-Level Translator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.2"
+				(at 24.13 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Texas Instruments"
+				(at 24.13 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "TXS0108EPWRG4"
+				(at 24.13 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "595-TXS0108EPWRG4"
+				(at 24.13 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TXS0108EPWRG4?qs=wkx8pu8tL7LKCwSiM1j4%252Bw%3D%3D"
+				(at 24.13 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" "TXS0108EPWRG4"
+				(at 24.13 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/txs0108epwrg4/texas-instruments"
+				(at 24.13 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "TXS0108EPWRG4_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 22.86 -25.4)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -22.86 0)
+					(length 5.08)
+					(name "OE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -22.86 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -20.32 180)
+					(length 5.08)
+					(name "B8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -17.78 180)
+					(length 5.08)
+					(name "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -15.24 180)
+					(length 5.08)
+					(name "B6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -12.7 180)
+					(length 5.08)
+					(name "B5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -10.16 180)
+					(length 5.08)
+					(name "B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -7.62 180)
+					(length 5.08)
+					(name "B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -5.08 180)
+					(length 5.08)
+					(name "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -2.54 180)
+					(length 5.08)
+					(name "VCCB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "VCCA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 0 180)
+					(length 5.08)
+					(name "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 5.08)
+					(name "A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 0)
+					(length 5.08)
+					(name "A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 0)
+					(length 5.08)
+					(name "A6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 0)
+					(length 5.08)
+					(name "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -20.32 0)
+					(length 5.08)
+					(name "A8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 37.465 139.065 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92d40977-522e-4da6-899f-4b02fb95cfe7")
+		(property "Reference" "D1"
+			(at 40.64 139.3825 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 40.64 141.9225 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+			(at 37.465 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 37.465 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 37.465 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c35101f-f692-4277-9711-e955993493ab")
+		)
+		(pin "2"
+			(uuid "8e9c45c0-675b-4018-9de4-63e7a094171e")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 37.465 128.905 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93e013da-c60b-47c0-ac53-c4b79e6ac125")
+		(property "Reference" "R12"
+			(at 39.37 127.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 39.37 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder"
+			(at 35.687 128.905 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 37.465 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 37.465 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "066e62da-8bd1-4e7b-9410-ec4e9e16eb6e")
+		)
+		(pin "2"
+			(uuid "091ff3c6-cc62-47c8-adf8-ab65ac78fa17")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_Optical:SFP+")
+		(at 142.24 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b7615df-c247-4755-834b-e2dd2ba032d1")
+		(property "Reference" "J3"
+			(at 144.4341 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SFP+"
+			(at 144.4341 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector:Connector_SFP_and_Cage"
+			(at 142.24 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://members.snia.org/document/dl/25892"
+			(at 130.81 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9305fddd-7b3f-46e8-8081-b96cd3484c5c")
+		)
+		(pin "10"
+			(uuid "9cbbcb5d-d4d8-4f67-8cd9-12cd595d268f")
+		)
+		(pin "11"
+			(uuid "f4727ab9-7ad0-4e6e-8dae-491627161b21")
+		)
+		(pin "12"
+			(uuid "5f30bafb-df0a-49a6-856b-3126d9163b1b")
+		)
+		(pin "13"
+			(uuid "cb692f11-3151-446b-8de1-d147c4f9f111")
+		)
+		(pin "14"
+			(uuid "cc24747b-51e0-400e-a002-438fc195be43")
+		)
+		(pin "15"
+			(uuid "e3241635-8d75-4449-b046-a60275c85f55")
+		)
+		(pin "16"
+			(uuid "e43a4ca0-de55-4114-832d-8690dd714009")
+		)
+		(pin "17"
+			(uuid "3295c291-acd1-44d5-b88d-89beced38659")
+		)
+		(pin "18"
+			(uuid "96eeda63-df80-410c-aa47-cb57cb50128e")
+		)
+		(pin "19"
+			(uuid "102e4005-2455-4913-92ce-55961045a78c")
+		)
+		(pin "2"
+			(uuid "e2442198-3e5b-472e-bbd4-76bfecb72def")
+		)
+		(pin "20"
+			(uuid "3f60f117-b944-4c0c-9661-c8dbf1ec9c0e")
+		)
+		(pin "3"
+			(uuid "8997feb5-106e-49fa-a6f2-18614738a890")
+		)
+		(pin "4"
+			(uuid "cf23ea31-9c4e-41f9-94aa-74aedd9e11c5")
+		)
+		(pin "5"
+			(uuid "a28580f2-dd3b-4fda-8210-4071229f13c5")
+		)
+		(pin "6"
+			(uuid "f1f0beb0-890c-4504-9500-a6a882bf8e8c")
+		)
+		(pin "7"
+			(uuid "530b0786-9868-4ac8-ae61-27108d3e3b58")
+		)
+		(pin "8"
+			(uuid "38ed47f3-22d3-4d06-87a6-25ebdc2817ff")
+		)
+		(pin "9"
+			(uuid "12da5ba4-343d-49ba-bd83-dc6a7fdf1155")
+		)
+		(pin "CAGE"
+			(uuid "ff02512e-55fb-4263-887c-5f7664c4e0ee")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:TXS0108EPWRG4")
+		(at 212.09 76.835 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7c8a085-c762-4424-8639-fc087617ab73")
+		(property "Reference" "IC2"
+			(at 226.06 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TXS0108EPWRG4"
+			(at 226.06 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:SOP65P640X120-20N"
+			(at 236.22 171.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1617786399489&ref_url=https%253A%252F%252Fyellow-search.com%252F"
+			(at 236.22 271.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 212.09 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.2"
+			(at 236.22 471.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 236.22 571.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TXS0108EPWRG4"
+			(at 236.22 671.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "595-TXS0108EPWRG4"
+			(at 236.22 771.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TXS0108EPWRG4?qs=wkx8pu8tL7LKCwSiM1j4%252Bw%3D%3D"
+			(at 236.22 871.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "TXS0108EPWRG4"
+			(at 236.22 971.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/txs0108epwrg4/texas-instruments"
+			(at 236.22 1071.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "868b6f59-62ea-423b-b13d-403f6d37f03e")
+		)
+		(pin "10"
+			(uuid "71c9ebb1-efa2-4acf-9495-2af354ec735e")
+		)
+		(pin "11"
+			(uuid "75e6f084-13b2-46ac-bdfc-677fa9314593")
+		)
+		(pin "12"
+			(uuid "821397df-e37d-49eb-aa8f-26478537133f")
+		)
+		(pin "13"
+			(uuid "050bbdbc-2af0-48a1-a22b-eb27e7c6947a")
+		)
+		(pin "14"
+			(uuid "c4cee469-8fcd-4345-b730-cf1ad9fa6b5d")
+		)
+		(pin "15"
+			(uuid "26bfc4fe-b89a-48fc-950a-49f32afeeba3")
+		)
+		(pin "16"
+			(uuid "2579561e-5a5a-40e6-b833-1eac1d833927")
+		)
+		(pin "17"
+			(uuid "b318c15f-7e8c-42eb-ad41-2e53bbaf7290")
+		)
+		(pin "18"
+			(uuid "8743ac4d-9684-4b23-b1e8-9283fea81432")
+		)
+		(pin "19"
+			(uuid "83a08dc7-788e-40b6-836b-ed0c0b2165a6")
+		)
+		(pin "2"
+			(uuid "319bd96d-5415-4f58-b790-f6f7ecaccdcb")
+		)
+		(pin "20"
+			(uuid "04cc771f-81e8-4680-8d81-46a13b7e7123")
+		)
+		(pin "3"
+			(uuid "89cc5a36-2404-4351-8c7c-c90184595be5")
+		)
+		(pin "4"
+			(uuid "e7431bff-35da-4ced-9f79-09d23372a735")
+		)
+		(pin "5"
+			(uuid "ccde3222-6f01-4e48-86cb-ce8318d3d624")
+		)
+		(pin "6"
+			(uuid "20b6aa56-e490-43a2-89a7-f160fefafa1a")
+		)
+		(pin "7"
+			(uuid "80fc9ad8-2bd9-4959-8be5-334d6e216420")
+		)
+		(pin "8"
+			(uuid "9ac917aa-1f42-401c-9ee2-5614b3677f71")
+		)
+		(pin "9"
+			(uuid "ec6a92ed-09eb-4406-a5b1-e97b2604ffa8")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
+					(reference "IC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_Optical:SFP+")
+		(at 142.24 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1389021-f6bc-48b3-b06a-9a5da438de39")
+		(property "Reference" "J4"
+			(at 144.4341 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SFP+"
+			(at 144.4341 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector:Connector_SFP_and_Cage"
+			(at 142.24 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://members.snia.org/document/dl/25892"
+			(at 130.81 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "acf3b6f7-9fc9-4bc0-8fdf-81229189d284")
+		)
+		(pin "10"
+			(uuid "63cb7753-c678-4071-8a42-ad68460ade5d")
+		)
+		(pin "11"
+			(uuid "d2242d65-34d6-494e-ba3a-ff0e9974b318")
+		)
+		(pin "12"
+			(uuid "cec5d972-bd5c-451a-b4a0-a5d5e4141e0f")
+		)
+		(pin "13"
+			(uuid "5c704583-451d-4596-be7a-0a7f1b03d8fa")
+		)
+		(pin "14"
+			(uuid "71913570-3953-402f-8796-3bff49087c40")
+		)
+		(pin "15"
+			(uuid "be6c28bb-8ebe-422e-baaf-65bb1f0c3600")
+		)
+		(pin "16"
+			(uuid "06d68aa8-8717-4d1b-83be-3dfe3a691d2f")
+		)
+		(pin "17"
+			(uuid "6f1d0735-cfb0-46b5-b081-7ea4f8a8aa9f")
+		)
+		(pin "18"
+			(uuid "82555f73-a906-4ce7-8cde-a28661732816")
+		)
+		(pin "19"
+			(uuid "832442f3-34a1-4834-b3a3-a68f8f34c0be")
+		)
+		(pin "2"
+			(uuid "1f9871d6-4caf-4fe8-bc4f-884a4f79c499")
+		)
+		(pin "20"
+			(uuid "110c6000-3032-425f-9db4-0685b271af58")
+		)
+		(pin "3"
+			(uuid "eb4a076b-b1c1-4cd3-b8ce-fbd4bbeb4ead")
+		)
+		(pin "4"
+			(uuid "7e5db93d-c3ae-49e8-a252-2de4219bc7f1")
+		)
+		(pin "5"
+			(uuid "61fcfbd3-f6fb-4edf-a02b-a39b3dec5fc8")
+		)
+		(pin "6"
+			(uuid "5ef056c4-9337-47ab-baf3-e3f9b5b22f21")
+		)
+		(pin "7"
+			(uuid "5abcb7f0-3f32-41cb-907c-3444ce9dd279")
+		)
+		(pin "8"
+			(uuid "34abe5ab-69eb-4a78-a2da-e825484b84ed")
+		)
+		(pin "9"
+			(uuid "3ecaa6c3-90b8-49ee-8275-078a263320f9")
+		)
+		(pin "CAGE"
+			(uuid "ce515d1a-6ff0-4500-b148-f6b7ab8648fb")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:TXS0108EPWRG4")
+		(at 57.15 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da8bad73-a1f6-441b-9552-95a864969785")
+		(property "Reference" "IC1"
+			(at 71.12 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TXS0108EPWRG4"
+			(at 71.12 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:SOP65P640X120-20N"
+			(at 81.28 164.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1617786399489&ref_url=https%253A%252F%252Fyellow-search.com%252F"
+			(at 81.28 264.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.2"
+			(at 81.28 464.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 81.28 564.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TXS0108EPWRG4"
+			(at 81.28 664.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "595-TXS0108EPWRG4"
+			(at 81.28 764.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TXS0108EPWRG4?qs=wkx8pu8tL7LKCwSiM1j4%252Bw%3D%3D"
+			(at 81.28 864.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "TXS0108EPWRG4"
+			(at 81.28 964.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/txs0108epwrg4/texas-instruments"
+			(at 81.28 1064.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db188361-e14f-4ba6-bdce-b9b77922fe79")
+		)
+		(pin "10"
+			(uuid "7612395f-50cc-40ba-bde6-1b41588c4219")
+		)
+		(pin "11"
+			(uuid "51db0f9b-a0b2-4a15-99e2-71bf32675f27")
+		)
+		(pin "12"
+			(uuid "c2c2b1ae-f130-4d4f-b903-75694efe1469")
+		)
+		(pin "13"
+			(uuid "b1d5256c-d5cc-4000-8ec4-f94ea55172b4")
+		)
+		(pin "14"
+			(uuid "dc12c77e-caad-4b61-a4e3-58f1e2a94bae")
+		)
+		(pin "15"
+			(uuid "a6a0a5a1-bad6-45bc-a1b7-ba230e6bb067")
+		)
+		(pin "16"
+			(uuid "2ff9cb4b-0578-43c5-8758-780aaef866be")
+		)
+		(pin "17"
+			(uuid "f0c5432a-b828-4a4c-a858-992e5ae0fe05")
+		)
+		(pin "18"
+			(uuid "26be6ca8-9bc5-4689-bb0c-28c9bd56d136")
+		)
+		(pin "19"
+			(uuid "55144596-ebe2-4421-ac0e-9aea4cea8e64")
+		)
+		(pin "2"
+			(uuid "f9ee1f88-4de3-4d84-8f43-ec5ec01c2092")
+		)
+		(pin "20"
+			(uuid "8f88c53f-943f-4127-8c92-64b74805f9d7")
+		)
+		(pin "3"
+			(uuid "f311f18f-a687-4dea-9e20-3583d74493c6")
+		)
+		(pin "4"
+			(uuid "2012e353-8ddc-4f21-a209-dba44e5b4886")
+		)
+		(pin "5"
+			(uuid "394521e5-fde2-4d19-a3db-63d1d394be91")
+		)
+		(pin "6"
+			(uuid "3b9aa68d-685d-45c3-bea7-c5be6d0c7518")
+		)
+		(pin "7"
+			(uuid "01d1a472-3cdd-42ee-af5e-3bc5a76cd58a")
+		)
+		(pin "8"
+			(uuid "9297ed3c-df1a-4498-804c-a6084d597573")
+		)
+		(pin "9"
+			(uuid "ddcda85e-a14a-4447-a728-8d90986374a2")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/265f923f-4f95-431b-88c9-cd6a6d8dfcf3/41b8512c-2e8f-4f4a-9a20-a5533980b425"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

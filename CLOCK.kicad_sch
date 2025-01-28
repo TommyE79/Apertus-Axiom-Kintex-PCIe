@@ -1,602 +1,1814 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 41c4b834-4d20-4ef1-b8e1-fed2c4e5067d)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Device:Crystal" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "Y" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Crystal" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "quartz ceramic resonator oscillator" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Two pin crystal" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Crystal*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Crystal_0_1"
-        (rectangle (start -1.143 2.54) (end 1.143 -2.54)
-          (stroke (width 0.3048) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.54 0)
-            (xy -1.905 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.905 -1.27)
-            (xy -1.905 1.27)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.905 -1.27)
-            (xy 1.905 1.27)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 0)
-            (xy 1.905 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "Crystal_1_1"
-        (pin passive line (at -3.81 0 0) (length 1.27)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 3.81 0 180) (length 1.27)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Oscillator:XO91" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "X" (at -5.08 6.35 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "XO91" (at 1.27 -6.35 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "Oscillator:Oscillator_SMD_EuroQuartz_XO91-4Pin_7.0x5.0mm" (at 17.78 -8.89 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/B400/XO91.pdf" (at -2.54 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "Crystal Clock Oscillator" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "HCMOS Clock Oscillator" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Oscillator*SMD*EuroQuartz*XO91*7.0x5.0mm*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "XO91_0_1"
-        (rectangle (start -5.08 5.08) (end 5.08 -5.08)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (polyline
-          (pts
-            (xy 0.762 -0.762)
-            (xy 0.508 -0.762)
-            (xy 0.508 0.762)
-            (xy 0 0.762)
-            (xy 0 -0.762)
-            (xy -0.508 -0.762)
-            (xy -0.508 0.762)
-            (xy -1.016 0.762)
-            (xy -1.016 -0.762)
-            (xy -1.27 -0.762)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "XO91_1_1"
-        (pin input line (at -7.62 0 0) (length 2.54)
-          (name "EN" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -7.62 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 7.62 0 180) (length 2.54)
-          (name "OUT" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 7.62 270) (length 2.54)
-          (name "V+" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Oscillator:XUX53" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -6.35 6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "XUX53" (at 5.08 6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Oscillator:Oscillator_SMD_IDT_JS6-6_5.0x3.2mm_P1.27mm" (at 1.27 -8.89 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://www.idt.com/document/dst/xu-family-datasheet" (at -10.16 17.78 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "OTP XHCMOS 3.3V VCXO" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Low phase noise, quartz-based PLL oscillator, 0.016-1500 MHz, complementary output" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Oscillator*JS6*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "XUX53_0_1"
-        (rectangle (start -7.62 5.08) (end 7.62 -5.08)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (polyline
-          (pts
-            (xy -5.08 2.54)
-            (xy -4.445 2.54)
-            (xy -4.445 3.81)
-            (xy -3.81 3.81)
-            (xy -3.81 2.54)
-            (xy -3.175 2.54)
-            (xy -3.175 3.81)
-            (xy -2.54 3.81)
-            (xy -2.54 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "XUX53_1_1"
-        (pin input line (at -10.16 0 0) (length 2.54)
-          (name "E/D" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin no_connect line (at -7.62 -2.54 0) (length 2.54) hide
-          (name "NC" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -7.62 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 10.16 0 180) (length 2.54)
-          (name "OUT" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 10.16 -2.54 180) (length 2.54)
-          (name "OUT2" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 7.62 270) (length 2.54)
-          (name "VDD" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "SamacSys_Parts:SI5338A-B04911-GM" (in_bom yes) (on_board yes)
-      (property "Reference" "IC" (at 26.67 20.32 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Value" "SI5338A-B04911-GM" (at 26.67 17.78 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "QFN50P400X400X90-25N-D" (at 26.67 -82.22 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Datasheet" "https://www.silabs.com/documents/public/data-sheets/Si5338.pdf" (at 26.67 -182.22 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Height" "0.9" (at 26.67 -382.22 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Manufacturer_Name" "Silicon Labs" (at 26.67 -482.22 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Manufacturer_Part_Number" "SI5338A-B04911-GM" (at 26.67 -582.22 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Mouser Part Number" "634-SI5338A-B04911GM" (at 26.67 -682.22 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=634-SI5338A-B04911GM" (at 26.67 -782.22 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Arrow Part Number" "SI5338A-B04911-GM" (at 26.67 -882.22 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Arrow Price/Stock" "https://www.arrow.com/en/products/si5338a-b04911-gm/silicon-labs" (at 26.67 -982.22 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "ki_description" "Clock Generator 5MHz to 710MHz Input 710MHz Output 24-Pin QFN EP Tray" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SI5338A-B04911-GM_1_1"
-        (rectangle (start 5.08 15.24) (end 25.4 -25.4)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at 0 0 0) (length 5.08)
-          (name "IN1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 15.24 -30.48 90) (length 5.08)
-          (name "CLK3A" (effects (font (size 1.27 1.27))))
-          (number "10" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 17.78 -30.48 90) (length 5.08)
-          (name "VDDO3" (effects (font (size 1.27 1.27))))
-          (number "11" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 20.32 -30.48 90) (length 5.08)
-          (name "SCL" (effects (font (size 1.27 1.27))))
-          (number "12" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 30.48 -12.7 180) (length 5.08)
-          (name "CLK2B" (effects (font (size 1.27 1.27))))
-          (number "13" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 30.48 -10.16 180) (length 5.08)
-          (name "CLK2A" (effects (font (size 1.27 1.27))))
-          (number "14" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 30.48 -7.62 180) (length 5.08)
-          (name "VDDO2" (effects (font (size 1.27 1.27))))
-          (number "15" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 30.48 -5.08 180) (length 5.08)
-          (name "VDDO1" (effects (font (size 1.27 1.27))))
-          (number "16" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 30.48 -2.54 180) (length 5.08)
-          (name "CLK1B" (effects (font (size 1.27 1.27))))
-          (number "17" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 30.48 0 180) (length 5.08)
-          (name "CLK1A" (effects (font (size 1.27 1.27))))
-          (number "18" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 22.86 20.32 270) (length 5.08)
-          (name "SDA" (effects (font (size 1.27 1.27))))
-          (number "19" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 0) (length 5.08)
-          (name "IN2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 20.32 20.32 270) (length 5.08)
-          (name "VDDO0" (effects (font (size 1.27 1.27))))
-          (number "20" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 17.78 20.32 270) (length 5.08)
-          (name "CLK0B" (effects (font (size 1.27 1.27))))
-          (number "21" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 15.24 20.32 270) (length 5.08)
-          (name "CLK0A" (effects (font (size 1.27 1.27))))
-          (number "22" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 12.7 20.32 270) (length 5.08)
-          (name "RSVD_GND" (effects (font (size 1.27 1.27))))
-          (number "23" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 20.32 270) (length 5.08)
-          (name "VDD_2" (effects (font (size 1.27 1.27))))
-          (number "24" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 20.32 270) (length 5.08)
-          (name "EPAD" (effects (font (size 1.27 1.27))))
-          (number "25" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -5.08 0) (length 5.08)
-          (name "IN3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -7.62 0) (length 5.08)
-          (name "IN4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -10.16 0) (length 5.08)
-          (name "IN5" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -12.7 0) (length 5.08)
-          (name "IN6" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 -30.48 90) (length 5.08)
-          (name "VDD_1" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 -30.48 90) (length 5.08)
-          (name "INTR" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 12.7 -30.48 90) (length 5.08)
-          (name "CLK3B" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-
-  (symbol (lib_id "Oscillator:XUX53") (at 80.01 73.66 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1f1aa1ef-696a-4aab-96b8-a708ecb56616)
-    (property "Reference" "U8" (at 82.2041 63.5 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "XUX53" (at 82.2041 66.04 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Oscillator:Oscillator_SMD_IDT_JS6-6_5.0x3.2mm_P1.27mm" (at 81.28 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.idt.com/document/dst/xu-family-datasheet" (at 69.85 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 97e246b4-e73c-4680-a370-0debb4612abf))
-    (pin "2" (uuid 66d503d3-b547-43b5-8a03-8434bdcb64fc))
-    (pin "3" (uuid 0085b3df-be31-44e9-ada7-67f4f6cc9d7c))
-    (pin "4" (uuid 2422c3a2-ba04-4fc7-ba22-026e598cbd96))
-    (pin "5" (uuid e9824b32-6a7f-4467-8bad-b9b561c78657))
-    (pin "6" (uuid 96939cfd-7ba0-486a-9308-05f6b0b7d727))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
-          (reference "U8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Oscillator:XO91") (at 81.28 158.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 22bd6b6b-710e-4f9a-93b9-0b8a7986ca3d)
-    (property "Reference" "X1" (at 90.17 155.1021 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "XO91" (at 90.17 157.6421 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Oscillator:Oscillator_SMD_EuroQuartz_XO91-4Pin_7.0x5.0mm" (at 99.06 167.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/B400/XO91.pdf" (at 78.74 158.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 47d4b87b-9268-4b6a-9752-f2b492e6aef9))
-    (pin "2" (uuid d47615b1-b320-459b-95bb-1131056b8fa9))
-    (pin "3" (uuid 1546d832-99e3-451f-98f3-d5ed8a4f8690))
-    (pin "4" (uuid 2c5a00db-2e82-4a31-b247-e94025f1011a))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
-          (reference "X1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Oscillator:XUX53") (at 78.74 36.83 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3f6cf8d2-f606-4ed9-9602-859934c48795)
-    (property "Reference" "U2" (at 80.9341 26.67 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "XUX53" (at 80.9341 29.21 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Oscillator:Oscillator_SMD_IDT_JS6-6_5.0x3.2mm_P1.27mm" (at 80.01 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.idt.com/document/dst/xu-family-datasheet" (at 68.58 19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 24b6b86c-fddd-47bf-8915-f8c88bb6e6ad))
-    (pin "2" (uuid bffd1ea9-4477-421c-99d3-989ae6d15860))
-    (pin "3" (uuid 84002729-3437-4759-b475-998d42856d8b))
-    (pin "4" (uuid 3048c217-2703-451c-bb02-c161e321d833))
-    (pin "5" (uuid fa351db2-4dfa-425a-84d3-249d3dbaa981))
-    (pin "6" (uuid 2b03de20-f207-4035-9e1f-86a19840939f))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
-          (reference "U2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Oscillator:XUX53") (at 196.85 43.18 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 710b39f9-9a47-4098-abd1-04bb7ee4fbcd)
-    (property "Reference" "U10" (at 199.0441 33.02 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "XUX53" (at 199.0441 35.56 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Oscillator:Oscillator_SMD_IDT_JS6-6_5.0x3.2mm_P1.27mm" (at 198.12 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.idt.com/document/dst/xu-family-datasheet" (at 186.69 25.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f2f51ef4-1bd4-4f78-a6d0-b9c0b434732e))
-    (pin "2" (uuid 5176b045-637d-4cd7-961e-140fd37eb995))
-    (pin "3" (uuid 554e53b6-4bdb-4b6c-a374-9e7c38fb6d23))
-    (pin "4" (uuid 38243eb6-7757-49d0-83c3-aa6c4ca905a3))
-    (pin "5" (uuid 6ee48047-8f3e-430e-847f-861c04fea7c6))
-    (pin "6" (uuid e76dfbec-a51e-4d1e-8761-8eb25acb5576))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
-          (reference "U10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "SamacSys_Parts:SI5338A-B04911-GM") (at 199.39 88.9 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8ae3cf3e-6fd3-43ea-9e84-d5a2e8b67c9a)
-    (property "Reference" "IC13" (at 236.22 81.9719 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SI5338A-B04911-GM" (at 236.22 84.5119 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "QFN50P400X400X90-25N-D" (at 226.06 171.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://www.silabs.com/documents/public/data-sheets/Si5338.pdf" (at 226.06 271.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "0.9" (at 226.06 471.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Silicon Labs" (at 226.06 571.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "SI5338A-B04911-GM" (at 226.06 671.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "634-SI5338A-B04911GM" (at 226.06 771.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=634-SI5338A-B04911GM" (at 226.06 871.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Arrow Part Number" "SI5338A-B04911-GM" (at 226.06 971.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Arrow Price/Stock" "https://www.arrow.com/en/products/si5338a-b04911-gm/silicon-labs" (at 226.06 1071.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 1711200d-e617-4ca5-b325-d69d5d4d14fa))
-    (pin "10" (uuid e2623b5c-92c7-40a4-8303-4680b540fcf6))
-    (pin "11" (uuid 05450e8c-586f-49ae-9753-205a5a8b1ce6))
-    (pin "12" (uuid 737e5888-d181-4a6d-9b23-4d3613a37946))
-    (pin "13" (uuid 236cfd8d-c515-4b66-a8f1-d050907ca0f1))
-    (pin "14" (uuid c3101f28-f223-488f-b396-84373c2ffd87))
-    (pin "15" (uuid f4b1b4e2-53bb-4dd1-aa15-3a6d167a4462))
-    (pin "16" (uuid 3956b904-e3ac-4a23-a4f8-e4a68c8fe707))
-    (pin "17" (uuid 512d84cf-8a25-4304-b67e-0ace433488b7))
-    (pin "18" (uuid 10896d01-52a7-40f5-99f7-ded9ab699125))
-    (pin "19" (uuid 8ad9ab10-ed52-440e-8709-1fece47ea04f))
-    (pin "2" (uuid 49df3c89-165a-4944-ab10-a6d4da71ef51))
-    (pin "20" (uuid f2cb801c-0c48-413b-bee9-cb06cdaa2e74))
-    (pin "21" (uuid 0f1d2429-2dc9-4144-972d-6929b0fba757))
-    (pin "22" (uuid 981c1f9e-484f-4d0a-806a-32c07f7ff5c2))
-    (pin "23" (uuid 40c67459-16e7-40a5-a439-86b0aebb9737))
-    (pin "24" (uuid 8c07dc5e-4610-471a-bbdb-70f774cb8198))
-    (pin "25" (uuid 9ed58905-0c34-491d-89a4-ce52496a6dec))
-    (pin "3" (uuid d3d64d19-f1f6-4105-b840-49a4570649fe))
-    (pin "4" (uuid 2c52428e-b53e-470c-9a53-648182e693b6))
-    (pin "5" (uuid 2debb396-c7c0-494f-a304-d0a06e0bd71a))
-    (pin "6" (uuid f0ffb485-fcbd-46f9-b616-18db81b6dd9a))
-    (pin "7" (uuid b7d4bf7b-8f51-446f-8fd4-f56cc7a755d7))
-    (pin "8" (uuid 3ba5f012-413a-4a22-8490-ea3eda74b7e5))
-    (pin "9" (uuid 98ca1acf-05a3-4fc8-9efc-65a02426295a))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
-          (reference "IC13") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Oscillator:XUX53") (at 80.01 120.65 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid bc7cf40d-887e-47c6-a32e-2649a86c25ca)
-    (property "Reference" "U9" (at 82.2041 110.49 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "XUX53" (at 82.2041 113.03 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Oscillator:Oscillator_SMD_IDT_JS6-6_5.0x3.2mm_P1.27mm" (at 81.28 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.idt.com/document/dst/xu-family-datasheet" (at 69.85 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 925ca3fd-6452-46a9-bbf5-50ec459bf0de))
-    (pin "2" (uuid 0992bd0c-7f25-4564-ad0d-a6aa24212086))
-    (pin "3" (uuid 303aafd8-aca6-4195-b65e-7e38c28bf3e8))
-    (pin "4" (uuid 17ffdbf9-4216-4cce-9dce-d43af5c62d9d))
-    (pin "5" (uuid 1d02a2dd-6e2b-481b-98cc-f5a6979a2a8f))
-    (pin "6" (uuid 18e64aee-a450-4747-8d48-0114ca0fe1b5))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
-          (reference "U9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Crystal") (at 243.84 133.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid e2f978d6-6e1c-4511-a440-c50093ff29ec)
-    (property "Reference" "Y2" (at 243.84 125.73 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "25M" (at 243.84 128.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Crystal:Crystal_SMD_EuroQuartz_MQ2-2Pin_7.0x5.0mm_HandSoldering" (at 243.84 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 243.84 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0fd89ba5-3269-4e57-8ca7-4b1e89db88ae))
-    (pin "2" (uuid 3d644526-7fae-4cd5-a653-c018a5b43371))
-    (instances
-      (project "PCIexpress_x4_half"
-        (path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
-          (reference "Y2") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "41c4b834-4d20-4ef1-b8e1-fed2c4e5067d")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:Crystal"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Crystal"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Two pin crystal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_0_1"
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -1.27) (xy -1.905 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -1.27) (xy 1.905 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Oscillator:XO91"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "X"
+				(at -5.08 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "XO91"
+				(at 1.27 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Oscillator:Oscillator_SMD_EuroQuartz_XO91-4Pin_7.0x5.0mm"
+				(at 17.78 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/B400/XO91.pdf"
+				(at -2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "HCMOS Clock Oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Crystal Clock Oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Oscillator*SMD*EuroQuartz*XO91*7.0x5.0mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XO91_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -0.762) (xy 0.508 -0.762) (xy 0.508 0.762) (xy 0 0.762) (xy 0 -0.762) (xy -0.508 -0.762)
+						(xy -0.508 0.762) (xy -1.016 0.762) (xy -1.016 -0.762) (xy -1.27 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "XO91_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Oscillator:XUX53"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -6.35 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "XUX53"
+				(at 5.08 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Oscillator:Oscillator_SMD_IDT_JS6-6_5.0x3.2mm_P1.27mm"
+				(at 1.27 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.idt.com/document/dst/xu-family-datasheet"
+				(at -10.16 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low phase noise, quartz-based PLL oscillator, 0.016-1500 MHz, complementary output"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "OTP XHCMOS 3.3V VCXO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Oscillator*JS6*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XUX53_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -4.445 2.54) (xy -4.445 3.81) (xy -3.81 3.81) (xy -3.81 2.54) (xy -3.175 2.54)
+						(xy -3.175 3.81) (xy -2.54 3.81) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "XUX53_1_1"
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "E/D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -7.62 -2.54 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "OUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SamacSys_Parts:SI5338A-B04911-GM"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC"
+				(at 26.67 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "SI5338A-B04911-GM"
+				(at 26.67 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "QFN50P400X400X90-25N-D"
+				(at 26.67 -82.22 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.silabs.com/documents/public/data-sheets/Si5338.pdf"
+				(at 26.67 -182.22 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Clock Generator 5MHz to 710MHz Input 710MHz Output 24-Pin QFN EP Tray"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.9"
+				(at 26.67 -382.22 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Silicon Labs"
+				(at 26.67 -482.22 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "SI5338A-B04911-GM"
+				(at 26.67 -582.22 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "634-SI5338A-B04911GM"
+				(at 26.67 -682.22 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=634-SI5338A-B04911GM"
+				(at 26.67 -782.22 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" "SI5338A-B04911-GM"
+				(at 26.67 -882.22 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/si5338a-b04911-gm/silicon-labs"
+				(at 26.67 -982.22 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "SI5338A-B04911-GM_1_1"
+				(rectangle
+					(start 5.08 15.24)
+					(end 25.4 -25.4)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "IN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -30.48 90)
+					(length 5.08)
+					(name "CLK3A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -30.48 90)
+					(length 5.08)
+					(name "VDDO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -30.48 90)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -12.7 180)
+					(length 5.08)
+					(name "CLK2B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -10.16 180)
+					(length 5.08)
+					(name "CLK2A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -7.62 180)
+					(length 5.08)
+					(name "VDDO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -5.08 180)
+					(length 5.08)
+					(name "VDDO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -2.54 180)
+					(length 5.08)
+					(name "CLK1B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 0 180)
+					(length 5.08)
+					(name "CLK1A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 20.32 270)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "IN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 20.32 270)
+					(length 5.08)
+					(name "VDDO0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 20.32 270)
+					(length 5.08)
+					(name "CLK0B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 20.32 270)
+					(length 5.08)
+					(name "CLK0A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 20.32 270)
+					(length 5.08)
+					(name "RSVD_GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 20.32 270)
+					(length 5.08)
+					(name "VDD_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 20.32 270)
+					(length 5.08)
+					(name "EPAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "IN3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "IN4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 5.08)
+					(name "IN5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 0)
+					(length 5.08)
+					(name "IN6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -30.48 90)
+					(length 5.08)
+					(name "VDD_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -30.48 90)
+					(length 5.08)
+					(name "INTR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -30.48 90)
+					(length 5.08)
+					(name "CLK3B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Oscillator:XUX53")
+		(at 80.01 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f1aa1ef-696a-4aab-96b8-a708ecb56616")
+		(property "Reference" "U8"
+			(at 82.2041 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "XUX53"
+			(at 82.2041 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Oscillator:Oscillator_SMD_IDT_JS6-6_5.0x3.2mm_P1.27mm"
+			(at 81.28 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.idt.com/document/dst/xu-family-datasheet"
+			(at 69.85 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97e246b4-e73c-4680-a370-0debb4612abf")
+		)
+		(pin "2"
+			(uuid "66d503d3-b547-43b5-8a03-8434bdcb64fc")
+		)
+		(pin "3"
+			(uuid "0085b3df-be31-44e9-ada7-67f4f6cc9d7c")
+		)
+		(pin "4"
+			(uuid "2422c3a2-ba04-4fc7-ba22-026e598cbd96")
+		)
+		(pin "5"
+			(uuid "e9824b32-6a7f-4467-8bad-b9b561c78657")
+		)
+		(pin "6"
+			(uuid "96939cfd-7ba0-486a-9308-05f6b0b7d727")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Oscillator:XO91")
+		(at 81.28 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22bd6b6b-710e-4f9a-93b9-0b8a7986ca3d")
+		(property "Reference" "X1"
+			(at 90.17 155.1021 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XO91"
+			(at 90.17 157.6421 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Oscillator:Oscillator_SMD_EuroQuartz_XO91-4Pin_7.0x5.0mm"
+			(at 99.06 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/B400/XO91.pdf"
+			(at 78.74 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47d4b87b-9268-4b6a-9752-f2b492e6aef9")
+		)
+		(pin "2"
+			(uuid "d47615b1-b320-459b-95bb-1131056b8fa9")
+		)
+		(pin "3"
+			(uuid "1546d832-99e3-451f-98f3-d5ed8a4f8690")
+		)
+		(pin "4"
+			(uuid "2c5a00db-2e82-4a31-b247-e94025f1011a")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
+					(reference "X1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Oscillator:XUX53")
+		(at 78.74 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f6cf8d2-f606-4ed9-9602-859934c48795")
+		(property "Reference" "U2"
+			(at 80.9341 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "XUX53"
+			(at 80.9341 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Oscillator:Oscillator_SMD_IDT_JS6-6_5.0x3.2mm_P1.27mm"
+			(at 80.01 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.idt.com/document/dst/xu-family-datasheet"
+			(at 68.58 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "24b6b86c-fddd-47bf-8915-f8c88bb6e6ad")
+		)
+		(pin "2"
+			(uuid "bffd1ea9-4477-421c-99d3-989ae6d15860")
+		)
+		(pin "3"
+			(uuid "84002729-3437-4759-b475-998d42856d8b")
+		)
+		(pin "4"
+			(uuid "3048c217-2703-451c-bb02-c161e321d833")
+		)
+		(pin "5"
+			(uuid "fa351db2-4dfa-425a-84d3-249d3dbaa981")
+		)
+		(pin "6"
+			(uuid "2b03de20-f207-4035-9e1f-86a19840939f")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Oscillator:XUX53")
+		(at 196.85 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "710b39f9-9a47-4098-abd1-04bb7ee4fbcd")
+		(property "Reference" "U10"
+			(at 199.0441 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "XUX53"
+			(at 199.0441 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Oscillator:Oscillator_SMD_IDT_JS6-6_5.0x3.2mm_P1.27mm"
+			(at 198.12 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.idt.com/document/dst/xu-family-datasheet"
+			(at 186.69 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2f51ef4-1bd4-4f78-a6d0-b9c0b434732e")
+		)
+		(pin "2"
+			(uuid "5176b045-637d-4cd7-961e-140fd37eb995")
+		)
+		(pin "3"
+			(uuid "554e53b6-4bdb-4b6c-a374-9e7c38fb6d23")
+		)
+		(pin "4"
+			(uuid "38243eb6-7757-49d0-83c3-aa6c4ca905a3")
+		)
+		(pin "5"
+			(uuid "6ee48047-8f3e-430e-847f-861c04fea7c6")
+		)
+		(pin "6"
+			(uuid "e76dfbec-a51e-4d1e-8761-8eb25acb5576")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:SI5338A-B04911-GM")
+		(at 199.39 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ae3cf3e-6fd3-43ea-9e84-d5a2e8b67c9a")
+		(property "Reference" "IC13"
+			(at 236.22 81.9719 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SI5338A-B04911-GM"
+			(at 236.22 84.5119 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "QFN50P400X400X90-25N-D"
+			(at 226.06 171.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.silabs.com/documents/public/data-sheets/Si5338.pdf"
+			(at 226.06 271.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.9"
+			(at 226.06 471.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Silicon Labs"
+			(at 226.06 571.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI5338A-B04911-GM"
+			(at 226.06 671.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "634-SI5338A-B04911GM"
+			(at 226.06 771.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=634-SI5338A-B04911GM"
+			(at 226.06 871.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "SI5338A-B04911-GM"
+			(at 226.06 971.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/si5338a-b04911-gm/silicon-labs"
+			(at 226.06 1071.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1711200d-e617-4ca5-b325-d69d5d4d14fa")
+		)
+		(pin "10"
+			(uuid "e2623b5c-92c7-40a4-8303-4680b540fcf6")
+		)
+		(pin "11"
+			(uuid "05450e8c-586f-49ae-9753-205a5a8b1ce6")
+		)
+		(pin "12"
+			(uuid "737e5888-d181-4a6d-9b23-4d3613a37946")
+		)
+		(pin "13"
+			(uuid "236cfd8d-c515-4b66-a8f1-d050907ca0f1")
+		)
+		(pin "14"
+			(uuid "c3101f28-f223-488f-b396-84373c2ffd87")
+		)
+		(pin "15"
+			(uuid "f4b1b4e2-53bb-4dd1-aa15-3a6d167a4462")
+		)
+		(pin "16"
+			(uuid "3956b904-e3ac-4a23-a4f8-e4a68c8fe707")
+		)
+		(pin "17"
+			(uuid "512d84cf-8a25-4304-b67e-0ace433488b7")
+		)
+		(pin "18"
+			(uuid "10896d01-52a7-40f5-99f7-ded9ab699125")
+		)
+		(pin "19"
+			(uuid "8ad9ab10-ed52-440e-8709-1fece47ea04f")
+		)
+		(pin "2"
+			(uuid "49df3c89-165a-4944-ab10-a6d4da71ef51")
+		)
+		(pin "20"
+			(uuid "f2cb801c-0c48-413b-bee9-cb06cdaa2e74")
+		)
+		(pin "21"
+			(uuid "0f1d2429-2dc9-4144-972d-6929b0fba757")
+		)
+		(pin "22"
+			(uuid "981c1f9e-484f-4d0a-806a-32c07f7ff5c2")
+		)
+		(pin "23"
+			(uuid "40c67459-16e7-40a5-a439-86b0aebb9737")
+		)
+		(pin "24"
+			(uuid "8c07dc5e-4610-471a-bbdb-70f774cb8198")
+		)
+		(pin "25"
+			(uuid "9ed58905-0c34-491d-89a4-ce52496a6dec")
+		)
+		(pin "3"
+			(uuid "d3d64d19-f1f6-4105-b840-49a4570649fe")
+		)
+		(pin "4"
+			(uuid "2c52428e-b53e-470c-9a53-648182e693b6")
+		)
+		(pin "5"
+			(uuid "2debb396-c7c0-494f-a304-d0a06e0bd71a")
+		)
+		(pin "6"
+			(uuid "f0ffb485-fcbd-46f9-b616-18db81b6dd9a")
+		)
+		(pin "7"
+			(uuid "b7d4bf7b-8f51-446f-8fd4-f56cc7a755d7")
+		)
+		(pin "8"
+			(uuid "3ba5f012-413a-4a22-8490-ea3eda74b7e5")
+		)
+		(pin "9"
+			(uuid "98ca1acf-05a3-4fc8-9efc-65a02426295a")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
+					(reference "IC13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Oscillator:XUX53")
+		(at 80.01 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc7cf40d-887e-47c6-a32e-2649a86c25ca")
+		(property "Reference" "U9"
+			(at 82.2041 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "XUX53"
+			(at 82.2041 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Oscillator:Oscillator_SMD_IDT_JS6-6_5.0x3.2mm_P1.27mm"
+			(at 81.28 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.idt.com/document/dst/xu-family-datasheet"
+			(at 69.85 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "925ca3fd-6452-46a9-bbf5-50ec459bf0de")
+		)
+		(pin "2"
+			(uuid "0992bd0c-7f25-4564-ad0d-a6aa24212086")
+		)
+		(pin "3"
+			(uuid "303aafd8-aca6-4195-b65e-7e38c28bf3e8")
+		)
+		(pin "4"
+			(uuid "17ffdbf9-4216-4cce-9dce-d43af5c62d9d")
+		)
+		(pin "5"
+			(uuid "1d02a2dd-6e2b-481b-98cc-f5a6979a2a8f")
+		)
+		(pin "6"
+			(uuid "18e64aee-a450-4747-8d48-0114ca0fe1b5")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Crystal")
+		(at 243.84 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2f978d6-6e1c-4511-a440-c50093ff29ec")
+		(property "Reference" "Y2"
+			(at 243.84 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "25M"
+			(at 243.84 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_EuroQuartz_MQ2-2Pin_7.0x5.0mm_HandSoldering"
+			(at 243.84 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 243.84 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 243.84 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fd89ba5-3269-4e57-8ca7-4b1e89db88ae")
+		)
+		(pin "2"
+			(uuid "3d644526-7fae-4cd5-a653-c018a5b43371")
+		)
+		(instances
+			(project "PCIexpress_x4_half"
+				(path "/b1aa2a0c-f427-4789-8d8c-79113e4e0c38/89f94f7e-d1f3-420c-8af3-00ce6e589c8d"
+					(reference "Y2")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
